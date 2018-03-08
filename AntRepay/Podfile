@@ -1,0 +1,46 @@
+platform :ios,'8.0'
+
+target "AntRepay" do
+
+pod 'AFNetworking'
+
+pod 'MJExtension'
+
+pod 'MBProgressHUD'
+
+pod 'HYBMasonryAutoCellHeight', '~> 2.0.1'
+
+pod 'IQKeyboardManager', '~> 4.0.8'
+
+pod 'SDWebImage', '~> 4.0.0'
+
+pod 'FDFullscreenPopGesture', '~> 1.1'
+
+pod 'DZNEmptyDataSet'
+
+pod 'MJRefresh', '~> 3.1.12'
+
+pod 'SDCycleScrollView'
+
+#pod 'BRPickerView'
+
+#时间选择
+pod 'PGDatePicker'
+
+#字典为空时不crash
+pod "NSDictionary-NilSafe"
+
+#检测内存泄露
+#pod 'MLeaksFinder', '~> 0.2.1'
+
+#提醒用户给APP评论
+pod 'Appirater', '~> 2.3.1'
+
+#日历
+pod 'FSCalendar', '~> 2.7.9'
+
+pod 'ShareSDK3',:git => 'https://github.com/MobClub/ShareSDK-for-iOS-Spec.git'
+pod 'ShareSDK3/ShareSDKPlatforms/QQ',:git => 'https://github.com/MobClub/ShareSDK-for-iOS-Spec.git'
+pod 'ShareSDK3/ShareSDKPlatforms/WeChat',:git => 'https://github.com/MobClub/ShareSDK-for-iOS-Spec.git'
+
+end

@@ -1,0 +1,83 @@
+//
+//  PrefixHeader.pch
+//  AntRepay
+//
+//  Created by 帝云科技 on 2017/11/9.
+//  Copyright © 2017年 diyunkeji. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//宏定义与masonry更配哦。
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+#import "Masonry.h"
+
+#import "MJRefresh.h"
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+Add.h"
+#import "AFNetworking.h"
+#import "MJExtension.h"
+
+#import "UIImageView+WebCache.h"
+#import "UIScrollView+EmptyDataSet.h"
+#import "UITableViewCell+HYBMasonryAutoCellHeight.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
+
+#import "XHQ.h"
+#import "DYShowView.h"
+#import "DYAppReq.h"
+
+#import "DYTableViewCell.h"
+
+
+#define HMEncode(str) [str dataUsingEncoding:NSUTF8StringEncoding]
+
+#define PUSHVC(vc) [self.navigationController pushViewController:vc animated:YES]
+#define WEAKPUSHVC(vc) [weakSelf.navigationController pushViewController:vc animated:YES]
+
+//停止刷新和加载
+#define EndFreshHeaderAndFooter \
+\
+[self.tableView.mj_header endRefreshing];\
+[self.tableView.mj_footer endRefreshing];
+
+// 没有更多数据
+#define NoMoreData \
+\
+[self.tableView.mj_footer endRefreshingWithNoMoreData];
+
+
+///** 用户信息 **/
+//
+//// NSUserDefaults
+//#define USERDEFAULTS [NSUserDefaults standardUserDefaults]
+//
+////用户id
+//#define KUSER_ID [USERDEFAULTS objectForKey:KUser_id]
+//
+//// 用户id
+//#define KUser_id @"id"
+//
+//// 登录名
+//#define KUser_phone @"phone"
+//
+//// 昵称
+//#define KUser_nike_name @"nick_name"
+
+
+
+#define BaseURL @"http://www.hz-bnh.com/index.php/Api/"
+
+
+/** 账户 **/
+
+// 注册协议
+#define RegisterXieYi @"Register/agreement.html"
+
+// 头像上传
+#define SendheaderImage @"http://xyk.diyunkeji.com/index.php/Api/Account/avatar.html"
+
+
+#endif /* PrefixHeader_pch */
